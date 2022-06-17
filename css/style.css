@@ -43,6 +43,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
 }
 
 .section {
@@ -53,6 +55,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   font-size: 30px;
 }
 
@@ -69,9 +72,6 @@ body {
   text-align: center;
 }
 
-.nav-list {
-  list-style: none;
-}
 
 .nav-link {
   padding: 0 20px;
@@ -91,11 +91,6 @@ body {
   text-decoration: none;
 }
 
-@media (max-width: 768px) {
-  .section {
-    width: 100%;
-  }
-}
 
 .style_code {
   font-family: "Roboto", sans-serif;
@@ -118,4 +113,10 @@ body {
   font-size: 16px;
   text-align: center;
   font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
 }
